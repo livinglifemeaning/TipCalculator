@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap');
+
+:root {
+--cyan: hsl(172, 67%, 45%); 
+--card-bg: hsl(183, 100%, 15%); 
+--label-text: hsl(186, 14%, 43%); 
+--color3: hsl(184, 14%, 56%); 
+--bg: hsl(185, 41%, 84%); 
+--form-bg: hsl(189, 41%, 97%); 
+}

@@ -1,0 +1,48 @@
+@import '../variables.css'; 
+.form{
+    display: flex; 
+    flex-direction: column; 
+    gap: .5rem; 
+    position: relative; 
+}
+
+.label{
+    color: var(--label-text); 
+}
+
+.input{
+    background-color: var(--form-bg);
+    padding: .4rem 1rem; 
+    border-radius: 5px; 
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+}
+
+.input input{
+    background-color: transparent;
+    border: 0; 
+    text-align: right;
+    font-family: inherit;
+    font-size: 1.2rem; 
+    color: var(--card-bg); 
+    cursor: pointer; 
+    width: 100%; 
+}
+
+.input.error{
+    border: solid 2px #ff0033; 
+}
+
+.errorMsg{
+    color: #ff0033; 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+}
+
+@media (min-width: 700px){
+    .input{
+        max-width: 400px; 
+    }
+}

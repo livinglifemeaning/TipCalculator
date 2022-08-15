@@ -1,0 +1,69 @@
+@import '../variables.css';
+.title{
+    color: var(--label-text)
+}
+.options{
+    display: flex; 
+    flex-wrap: wrap;
+    gap: 1rem; 
+    margin-top: 1rem; 
+    justify-content: center;
+}
+.option input[type="radio"]{
+    display: none; 
+
+}
+
+.option label{
+    color: #fff; 
+    display: block; 
+    background-color: var(--card-bg); 
+    padding: .5rem ;
+    width: 8rem; 
+    text-align: center; 
+    font-size: 1.2rem; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+.option input[type="radio"]:checked + label{
+    background-color: var(--cyan); 
+    color: var(--card-bg); 
+}
+
+.custom{
+    width: 8rem; 
+}
+.custom input{
+    background-color: var(--form-bg);
+    padding: .5rem ;
+    width: 8rem; 
+    border-radius: 5px; 
+    font-familY: inherit; 
+    font-size: 1.2rem; 
+    border: none; 
+    text-align: right; 
+    width: 100%; 
+    cursor: pointer; 
+}
+
+.custom input:focus {
+    border: solid 2px var(--cyan); 
+}
+
+@media (min-width: 700px){
+    .options{
+        justify-content: flex-start;
+    }
+
+    .option label{
+        width: 7rem; 
+    }
+    .custom{
+        width: 7rem; 
+    }
+
+    .tipForm{
+        max-width: 400px; 
+    }
+}
